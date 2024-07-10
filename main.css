@@ -1,7 +1,23 @@
-.earth{
-    background: rgb(0, 255, 0);
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    cursor: grab;
+@keyframes rotateEarth {
+    from{transform: translate(0px)}
+    to{transform: translate(-230px)}
+}
+
+.globe{
+    width: 300px;
+    height: 300px;
+    border-radius: 180px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.earthImage{
+    width: auto;
+    height: 300px;
+}
+
+.globeRotation{
+    display: flex;
+    flex-direction: row;
+    animation: rotateEarth 5s linear alternate infinite;
 }
