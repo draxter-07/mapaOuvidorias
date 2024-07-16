@@ -1,5 +1,5 @@
-let countries = [["Brasil", "67%", "61%"],
-                ["França", "38%", "85%"]]
+let countries = [["Brasil", "66%", "34%"],
+                ["França", "37.5%", "48%"]]
 let earth = document.getElementById("earthTerrain")
 for(let i = 0; i < countries.length; i++){
     let c = countries[i];
@@ -9,17 +9,6 @@ for(let i = 0; i < countries.length; i++){
                         title=${c[0]}
                         onclick="moveToCountry(event)">
                         </div>`
-}
-
-function rotateEarth(type){
-    let earth = document.getElementById("earthTerrain")
-    let transNumber = Number((earth.style.translate).replace("%", ""))
-    if(type==0 && transNumber != -75){
-        earth.style.translate = `${transNumber - 15}%`
-    }
-    if(type==1 && transNumber != 0){
-        earth.style.translate = `${transNumber + 15}%`
-    }
 }
 
 function sleep(ms) {
