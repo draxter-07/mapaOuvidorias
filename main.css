@@ -71,7 +71,7 @@ body{
 .countryContent{
     box-sizing: border-box;
     height: fit-content;
-    width: 40%;
+    width: 48%;
     max-height: 50px;
     overflow: hidden;
     padding: 10px;

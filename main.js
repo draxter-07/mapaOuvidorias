@@ -1,8 +1,14 @@
-let countries = [["Abecásia", "27.5%", "58.5%"],
-                ["Afeganistão", "34%", "67%"],
-                ["África do Sul", "77.5%", "53.5%"],
-                ["Albânia", "29.5%", "52.2%"],
-                ["Alemanha", "22.5%", "49.2%"]]
+let countries = [["Abecásia", "28%", "59%"],
+                ["Afeganistão", "34.5%", "67%"],
+                ["África do Sul", "77.5%", "54%"],
+                ["Albânia", "29.5%", "52.5%"],
+                ["Alemanha", "23%", "49.5%"],
+                ["Andorra", "28.7%", "47%"],
+                ["Angola", "65.5%", "52%"],
+                ["Antígua e Barbuda", "47%", "26%"],
+                ["Arábia Saudita", "41.5%", "61%"],
+                ["Argélia", "38.5%", "47.5%"]
+                ]
 let earth = document.getElementById("earthTerrain")
 for(let i = 0; i < countries.length; i++){
     let c = countries[i];
