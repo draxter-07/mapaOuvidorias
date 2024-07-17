@@ -1,12 +1,15 @@
-let countries = [["Brasil", "65%", "30%"],
-                ["França", "25.5%", "47%"]]
+let countries = [["Abecásia", "27.5%", "58.5%"],
+                ["Afeganistão", "34%", "67%"],
+                ["África do Sul", "77.5%", "53.5%"],
+                ["Albânia", "29.5%", "52.2%"],
+                ["Alemanha", "22.5%", "49.2%"]]
 let earth = document.getElementById("earthTerrain")
 for(let i = 0; i < countries.length; i++){
     let c = countries[i];
     earth.innerHTML += `<div 
                         class="pin" 
                         style="top: ${c[1]}; left: ${c[2]}"
-                        title=${c[0]}
+                        title="${c[0]}"
                         onclick="moveToCountry(event)">
                         </div>`
 }
@@ -29,9 +32,11 @@ function openCountryContent(id){
     let divToOpen = document.getElementById(id)
     let nowMaxHeight = divToOpen.style.maxHeight
     if (nowMaxHeight == "" || nowMaxHeight == "50px"){
-        divToOpen.style.maxHeight = "500px";
+        divToOpen.style.overflowY = "scroll";
+        divToOpen.style.maxHeight = "300px";
     }
     else{
         divToOpen.style.maxHeight = "50px";
+        divToOpen.style.overflowY = "hidden";
     }
 }
