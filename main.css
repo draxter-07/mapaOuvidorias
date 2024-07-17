@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    font-family: "roboto";
 }
 
 .globe{
@@ -49,16 +50,44 @@ body{
     margin: 50px 0px 0px 0px;
 }
 
-.content>div{
+.countryContent{
+    box-sizing: border-box;
+    height: fit-content;
     width: 40%;
-    height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    padding: 10px;
     background: rgb(220, 220, 220);
     margin: 0px 0px 10px 0px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
-    transition: border 1s;
+    transition: border 1s, max-height 0.5s;
 }
 
-.content>div:hover{
+.countryContent:hover{
     border: 3px solid rgb(0, 150, 255) !important;
+}
+
+.countryContentIndeed{
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+}
+
+.cCITitle{
+    text-align: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cCIContentTitle{
+    margin: 10px 0px 5px 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cCIContentContent{
+    width: 100%;
 }

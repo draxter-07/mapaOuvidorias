@@ -19,16 +19,40 @@
 
     <body>
         <div class="globe">
-            <div id="earthTerrain" class="globeRotation" onclick="rotateEarth()">
+            <div id="earthTerrain" class="globeRotation">
                 <img id="earthImg" draggable="false" class="earthImage" src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/02/mapa-mundi-em-fundo-azul.jpg"></img>
             </div>
         </div>
         <div class="content">
-            <div id="Brasil"></div>
-            <div id="França"></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="countryContent" id="Brasil">
+                <div class="countryContentIndeed" onclick="openCountryContent('Brasil')">
+                    <div class="cCITitle">Brasil</div>
+                    <div class="cCIContentTitle">
+                        Teste
+                    </div>
+                    <div class="cCIContentContent">
+                        tes tes tes te st estestestestes
+                        testestestesaçoiijasdi asdf
+                    </div>
+                </div>
+            </div>
+            <div class="countryContent" id="França">
+                <div class="countryContentIndeed" onclick="openCountryContent('França')">
+                    <div class="cCITitle">França</div>
+                    <div class="cCIContentTitle">
+                        Sobre o cargo
+                    </div>
+                    <div class="cCIContentContent">
+                        Figura do Défenseur des Droits criado em 2011. 
+                        Défenseur des Droits. 570 Delegados do Defensor em toda a França. 
+                        Nomeado pelo Presidente da República da França com mandato 
+                        não renovável de 6 anos.
+                    </div>
+                </div>
+            </div>
+            <div class="countryContent" ></div>
+            <div class="countryContent" ></div>
+            <div class="countryContent" ></div>
         </div>
         <script src="./main.js" type="module"></script>
     </body>

@@ -22,4 +22,16 @@ async function moveToCountry(e){
     divToGo.style.border = "3px solid rgb(0, 150, 255)";
     await sleep(1000)
     divToGo.style.border = "3px solid rgb(255, 255, 255)";
+    openCountryContent(e.target.title)
+}
+
+function openCountryContent(id){
+    let divToOpen = document.getElementById(id)
+    let nowMaxHeight = divToOpen.style.maxHeight
+    if (nowMaxHeight == "" || nowMaxHeight == "50px"){
+        divToOpen.style.maxHeight = "500px";
+    }
+    else{
+        divToOpen.style.maxHeight = "50px";
+    }
 }
