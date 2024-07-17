@@ -21,8 +21,8 @@ body{
 
 .pin{
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: rgb(150, 0, 255);
 }
