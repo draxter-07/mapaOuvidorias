@@ -53,12 +53,6 @@ body{
     position: relative;
 }
 
-@media only screen and (max-width: 1080px){
-    .globe{
-        width: 100%;
-    }
-}
-
 .content{
     display: flex;
     flex-direction: row;
@@ -108,4 +102,13 @@ body{
 
 .cCIContentContent{
     width: 100%;
+}
+
+@media only screen and (max-width: 1080px){
+    .globe{
+        width: 100%;
+    }
+    .countryContent{
+        width: 100%;
+    }
 }
