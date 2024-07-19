@@ -146,7 +146,7 @@ async function moveToCountry(e){
     divToGo.scrollIntoView({behavior: "smooth"})
     openCountryContent(e.target.title)
     await sleep(200)
-    divToGo.style.border = "3px solid rgb(0, 150, 255)";
+    divToGo.style.border = "3px solid rgb(150, 0, 150)";
     await sleep(1000)
     divToGo.style.border = "3px solid rgb(255, 255, 255)";
 }

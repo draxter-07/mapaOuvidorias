@@ -4,6 +4,7 @@ body{
     align-items: center;
     padding: 20px;
     font-family: "roboto";
+    background: rgb(0, 150, 255, 0.4);
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -14,7 +15,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     border-radius: 20px;
 }
 
@@ -69,15 +70,16 @@ body{
     max-height: 50px;
     overflow: hidden;
     padding: 10px;
-    background: rgb(220, 220, 220);
+    background: rgb(0, 150, 255);
     margin: 0px 0px 10px 0px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
-    transition: border 1s, max-height 0.5s;
+    transition: border 0.5s, max-height 0.5s;
+    color: rgb(255, 255, 255);
 }
 
 .countryContent:hover{
-    border: 3px solid rgb(0, 150, 255) !important;
+    border: 3px solid rgb(150, 0, 150) !important;
 }
 
 .countryContentIndeed{
@@ -89,7 +91,6 @@ body{
 .cCITitle{
     text-align: center;
     width: 100%;
-    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 600;
 }
