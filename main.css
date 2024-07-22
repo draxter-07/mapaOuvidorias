@@ -83,7 +83,6 @@ body{
     border: 2px solid rgb(0, 150, 255);
 }
 
-
 .content{
     display: flex;
     flex-direction: row;
