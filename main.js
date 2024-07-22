@@ -137,6 +137,14 @@ for(let i = 0; i < countries.length; i++){
                         </div>`
 }
 
+let input = document.getElementById("search");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    moveToCountry({target: {title: input.value}})
+  }
+});
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
