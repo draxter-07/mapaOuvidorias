@@ -4,7 +4,7 @@ body{
     align-items: center;
     padding: 20px;
     font-family: "roboto";
-    background: rgb(0, 150, 255, 0.4);
+    background: rgb(150, 255, 150);
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -31,6 +31,11 @@ body{
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    transition: box-shadow 0.5s;
+}
+.globe:hover{
+    box-shadow: 0px 0px 20px 0px rgb(0, 150, 255);
+    cursor: pointer;
 }
 
 .earthImage{
@@ -39,11 +44,17 @@ body{
 }
 
 .pin{
+    box-sizing: border-box;
     position: absolute;
     width: 5px;
     height: 5px;
+    border: 0px solid rgb(150, 0, 150);
     border-radius: 50%;
     background: rgb(150, 0, 150);
+    transition: border 0.1s;
+}
+.pin:hover{
+    border: 5px solid rgb(150, 0, 150);
 }
 
 .globeRotation{
@@ -79,7 +90,8 @@ body{
 }
 
 .countryContent:hover{
-    border: 3px solid rgb(150, 0, 150) !important;
+    border: 3px solid rgb(255, 150, 0) !important;
+    cursor: pointer;
 }
 
 .countryContentIndeed{
