@@ -46,15 +46,15 @@ body{
 .pin{
     box-sizing: border-box;
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 0.3vw;
+    height: 0.3vw;
     border: 0px solid rgb(150, 0, 150);
     border-radius: 50%;
     background: rgb(150, 0, 150);
     transition: border 0.1s;
 }
 .pin:hover{
-    border: 7px solid rgb(150, 0, 150);
+    border: 1vw solid rgb(150, 0, 150);
 }
 
 .globeRotation{
@@ -145,5 +145,9 @@ body{
     }
     .search{
         width: 80%;
+    }
+    .pin{
+        width: 0.6vw;
+        height: 0.6vw;
     }
 }
