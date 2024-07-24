@@ -54,7 +54,7 @@ body{
     transition: border 0.1s;
 }
 .pin:hover{
-    border: 1vw solid rgb(150, 0, 150);
+    border: 0.3vw solid rgb(150, 0, 150);
 }
 
 .globeRotation{
